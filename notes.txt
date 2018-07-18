@@ -1,0 +1,190 @@
+子窗口获取父窗口的方法
+$(window.parent.document).find("#iframe的id")
+
+父窗口获取子窗口的方法
+$(“#iframe的id"”).contents().find(“#id”)
+
+在父窗口中调用子窗口的js方法
+Iframe的name比如叫page  page. Window.function();
+
+scrollHeight兼容性
+ie 适用 document.body.scrollHeight+10
+非ie 适用 document.documentElement.scrollHeight
+
+判断是否是ie 支持ie6-ie11
+if (!!window.ActiveXObject || "ActiveXObject" in window){
+	true
+}else{
+	False
+}
+
+数组的添加和删除方法
+push()是向数组末端添加项的方法 返回数组的长度
+unshift()是向数组前端添加项的方法 返回数组的长度
+pop()从数组末端移除项 返回数组的长度
+shift()从数组前端移除项 返回数组的长度
+
+Dom添加方式
+append() 方法在被选元素的结尾插入内容。
+prepend() 方法在被选元素的开头插入内容。 
+after() 方法在被选元素之后插入内容。 
+before() 方法在被选元素之前插入内容。
+
+Math.ceil(x)   对数进行上舍入。
+Math.floor(x)  对数进行下舍入。
+Math.round(x)  把数四舍五入为最接近的整数。
+
+html清除缓存
+<meta http-equiv="Cache-Control" content="max-age=7200" />
+<meta http-equiv="Expires" content="Mon, 20 Jul 2013 23:00:00 GMT" />
+
+当前div到页面顶部的距离
+$('div').offset().top
+
+ 网页工作区域的高度和宽度  
+(javascript)  document.documentElement.clientHeight// IE 
+(jqurey)      $(window).height()
+
+
+ 元素距离文档顶端和左边的偏移值  
+(javascript)        DOM元素对象.offsetTop //IE firefox
+(javascript)        DOM元素对象.offsetLeft //IE firefox
+(jqurey)             jq对象.offset().top
+(jqurey)             jq对象.offset().left
+
+
+阻止事件冒泡，阻止默认事件
+1.event.stopPropagation()方法
+这是阻止事件的冒泡方法，不让事件向documen上蔓延，但是默认事件任然会
+执行，当你掉用这个方法的时候，如果点击一个连接，这个连接仍然会被打开，
+
+
+2.event.preventDefault()方法
+这是阻止默认事件的方法，调用此方法是，连接不会被打开，但是会发生冒泡，冒泡会传递到上一层的父元素；
+
+3.return false 
+这个方法比较暴力，他会同事阻止事件冒泡也会阻止默认事件；写上此代码，连
+接不会被打开，事件也不会传递到上一层的父元素；可以理解为return false
+就等于同时调用了event.stopPropagation()和event.preventDefault()
+
+Javascirpt中添加多个样式可以这样
+document.getElementById(“id”).style.cssText= “color:red;font-szie:12px;”
+
+添加和删除class的方法
+document.getElementByClassName(“class”).classlist.add(“class”);
+document.getElementById(“id”).classlist.remove(“class”);
+
+js判断是否手机端登录
+function check() {   
+	var userAgentInfo=navigator.userAgent;   
+	var Agents =new Array("Android","iPhone","SymbianOS","WindowsPhone","iPad","iPod"); 
+	var flag=true; 
+	for(var v=0;v<Agents.length;v++) {  
+		if(userAgentInfo.indexOf(Agents[v])>0) {   
+			flag=false;   
+	       		break;
+		}
+	}	
+	 return flag;  
+}
+Check()为true则pc端    false则为手机端
+
+
+CSS改变滚动条的样式
+::-webkit-scrollbar {  
+    width: 16px;  /*滚动条宽度*/
+    height: 16px;  /*滚动条高度*/
+}  
+
+::-webkit-scrollbar-track {  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;  /*滚动条的背景区域的圆角*/
+    background-color: red;/*滚动条的背景颜色*/ 
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 10px;  /*滚动条的圆角*/
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); 
+   background-color: green;  /*滚动条的背景颜色*/
+} 
+
+Vue生命周期以及钩子函数
+beforeCreate  创建前
+created   创建完成
+beforeMount  挂载前
+mounted   挂载结束
+beforeUpdate   更新前状态
+updated    更新完成状态
+beforeDestroy  销毁前状态
+destroyed  销毁状态
+
+github第一次提交代码至远程仓库步骤
+git clone  克隆项目
+git add .   添加修改后的所有内容
+git commit –m “test1” 提交到服务
+git push -u origin master  推送到仓库
+git pull master 更新本地代码
+git branch newBranch 创建新的分支
+git checkout newBranch 切换新分支
+
+gulp指令操作
+
+创建gulpfile.js文件
+var gulp = require("gulp");
+var uglify = require("gulp-uglify");  //丑化代码
+var concat = require("gulp-concat"); //合并js文件
+gulp.task("concat",function(){
+gulp.src(["script/*.js","!script/jquery.js"])//除去jquery之外的js文件
+ .pipe(uglify())
+ .pipe(concat("new.min.js")) //合并成为new.min.js文件
+ .pipe(gulp.dest("dist"));  //放置在dist文件夹中
+});
+npm install gulp
+运行 $ gulp concat
+
+手机端UI框架
+Sui （淘宝）   Weiui（微信） frozenUI (qq) Mui（最接近原生app）
+
+
+前端的细节知识点
+JS/CSS/IMG加载顺序关系之DOMContentLoaded事件
+1、CSS样式表影响了图片的加载速度，然而JS不会影响，如果想让图片尽快加载，就不要给图片使用样式，比如宽高采用标签属性即可。
+2、JS的加载执行速度影响了DOMContentLoaded事件的触发时间，如果想要尽快触发DOMContentLoaded事件，就将次要的JS采用动态加载的方式加载吧。
+
+Js闭包
+由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。
+用途: 一个是前面提到的可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。
+function outerFun(){
+ 	var a=0;
+	function innerFun(){
+  		a++;
+		alert(a);
+        }
+   return innerFun;  //注意这里
+}
+var obj=outerFun();
+obj();  //结果为1
+obj();  //结果为2
+var obj2=outerFun();
+obj2();  //结果为1
+obj2();  //结果为2
+
+
+数组去重
+var arr = ['abc','abcd','sss','2','d','t','2','ss','f','22','d'];
+var s = [];
+arr.forEach(function(e,i){
+    if(s.indexOf(arr[i]) == -1){  //判断在s数组中是否存在，不存在则push到s数组中
+  	s.push(e);
+    }
+})
+Console.log(s);
+
+
+
+
+
+
+
+
+
