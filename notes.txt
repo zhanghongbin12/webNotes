@@ -1,80 +1,80 @@
-×Ó´°¿Ú»ñÈ¡¸¸´°¿ÚµÄ·½·¨
-$(window.parent.document).find("#iframeµÄid")
+ï»¿å­çª—å£è·å–çˆ¶çª—å£çš„æ–¹æ³•
+$(window.parent.document).find("#iframeçš„id")
 
-¸¸´°¿Ú»ñÈ¡×Ó´°¿ÚµÄ·½·¨
-$(¡°#iframeµÄid"¡±).contents().find(¡°#id¡±)
+çˆ¶çª—å£è·å–å­çª—å£çš„æ–¹æ³•
+$(â€œ#iframeçš„id"â€).contents().find(â€œ#idâ€)
 
-ÔÚ¸¸´°¿ÚÖĞµ÷ÓÃ×Ó´°¿ÚµÄjs·½·¨
-IframeµÄname±ÈÈç½Ğpage  page. Window.function();
+åœ¨çˆ¶çª—å£ä¸­è°ƒç”¨å­çª—å£çš„jsæ–¹æ³•
+Iframeçš„nameæ¯”å¦‚å«page  page. Window.function();
 
-scrollHeight¼æÈİĞÔ
-ie ÊÊÓÃ document.body.scrollHeight+10
-·Çie ÊÊÓÃ document.documentElement.scrollHeight
+scrollHeightå…¼å®¹æ€§
+ie é€‚ç”¨ document.body.scrollHeight+10
+éie é€‚ç”¨ document.documentElement.scrollHeight
 
-ÅĞ¶ÏÊÇ·ñÊÇie Ö§³Öie6-ie11
+åˆ¤æ–­æ˜¯å¦æ˜¯ie æ”¯æŒie6-ie11
 if (!!window.ActiveXObject || "ActiveXObject" in window){
 	true
 }else{
 	False
 }
 
-Êı×éµÄÌí¼ÓºÍÉ¾³ı·½·¨
-push()ÊÇÏòÊı×éÄ©¶ËÌí¼ÓÏîµÄ·½·¨ ·µ»ØÊı×éµÄ³¤¶È
-unshift()ÊÇÏòÊı×éÇ°¶ËÌí¼ÓÏîµÄ·½·¨ ·µ»ØÊı×éµÄ³¤¶È
-pop()´ÓÊı×éÄ©¶ËÒÆ³ıÏî ·µ»ØÊı×éµÄ³¤¶È
-shift()´ÓÊı×éÇ°¶ËÒÆ³ıÏî ·µ»ØÊı×éµÄ³¤¶È
+æ•°ç»„çš„æ·»åŠ å’Œåˆ é™¤æ–¹æ³•
+push()æ˜¯å‘æ•°ç»„æœ«ç«¯æ·»åŠ é¡¹çš„æ–¹æ³• è¿”å›æ•°ç»„çš„é•¿åº¦
+unshift()æ˜¯å‘æ•°ç»„å‰ç«¯æ·»åŠ é¡¹çš„æ–¹æ³• è¿”å›æ•°ç»„çš„é•¿åº¦
+pop()ä»æ•°ç»„æœ«ç«¯ç§»é™¤é¡¹ è¿”å›æ•°ç»„çš„é•¿åº¦
+shift()ä»æ•°ç»„å‰ç«¯ç§»é™¤é¡¹ è¿”å›æ•°ç»„çš„é•¿åº¦
 
-DomÌí¼Ó·½Ê½
-append() ·½·¨ÔÚ±»Ñ¡ÔªËØµÄ½áÎ²²åÈëÄÚÈİ¡£
-prepend() ·½·¨ÔÚ±»Ñ¡ÔªËØµÄ¿ªÍ·²åÈëÄÚÈİ¡£ 
-after() ·½·¨ÔÚ±»Ñ¡ÔªËØÖ®ºó²åÈëÄÚÈİ¡£ 
-before() ·½·¨ÔÚ±»Ñ¡ÔªËØÖ®Ç°²åÈëÄÚÈİ¡£
+Domæ·»åŠ æ–¹å¼
+append() æ–¹æ³•åœ¨è¢«é€‰å…ƒç´ çš„ç»“å°¾æ’å…¥å†…å®¹ã€‚
+prepend() æ–¹æ³•åœ¨è¢«é€‰å…ƒç´ çš„å¼€å¤´æ’å…¥å†…å®¹ã€‚ 
+after() æ–¹æ³•åœ¨è¢«é€‰å…ƒç´ ä¹‹åæ’å…¥å†…å®¹ã€‚ 
+before() æ–¹æ³•åœ¨è¢«é€‰å…ƒç´ ä¹‹å‰æ’å…¥å†…å®¹ã€‚
 
-Math.ceil(x)   ¶ÔÊı½øĞĞÉÏÉáÈë¡£
-Math.floor(x)  ¶ÔÊı½øĞĞÏÂÉáÈë¡£
-Math.round(x)  °ÑÊıËÄÉáÎåÈëÎª×î½Ó½üµÄÕûÊı¡£
+Math.ceil(x)   å¯¹æ•°è¿›è¡Œä¸Šèˆå…¥ã€‚
+Math.floor(x)  å¯¹æ•°è¿›è¡Œä¸‹èˆå…¥ã€‚
+Math.round(x)  æŠŠæ•°å››èˆäº”å…¥ä¸ºæœ€æ¥è¿‘çš„æ•´æ•°ã€‚
 
-htmlÇå³ı»º´æ
+htmlæ¸…é™¤ç¼“å­˜
 <meta http-equiv="Cache-Control" content="max-age=7200" />
 <meta http-equiv="Expires" content="Mon, 20 Jul 2013 23:00:00 GMT" />
 
-µ±Ç°divµ½Ò³Ãæ¶¥²¿µÄ¾àÀë
+å½“å‰divåˆ°é¡µé¢é¡¶éƒ¨çš„è·ç¦»
 $('div').offset().top
 
- ÍøÒ³¹¤×÷ÇøÓòµÄ¸ß¶ÈºÍ¿í¶È  
+ ç½‘é¡µå·¥ä½œåŒºåŸŸçš„é«˜åº¦å’Œå®½åº¦  
 (javascript)  document.documentElement.clientHeight// IE 
 (jqurey)      $(window).height()
 
 
- ÔªËØ¾àÀëÎÄµµ¶¥¶ËºÍ×ó±ßµÄÆ«ÒÆÖµ  
-(javascript)        DOMÔªËØ¶ÔÏó.offsetTop //IE firefox
-(javascript)        DOMÔªËØ¶ÔÏó.offsetLeft //IE firefox
-(jqurey)             jq¶ÔÏó.offset().top
-(jqurey)             jq¶ÔÏó.offset().left
+ å…ƒç´ è·ç¦»æ–‡æ¡£é¡¶ç«¯å’Œå·¦è¾¹çš„åç§»å€¼  
+(javascript)        DOMå…ƒç´ å¯¹è±¡.offsetTop //IE firefox
+(javascript)        DOMå…ƒç´ å¯¹è±¡.offsetLeft //IE firefox
+(jqurey)             jqå¯¹è±¡.offset().top
+(jqurey)             jqå¯¹è±¡.offset().left
 
 
-×èÖ¹ÊÂ¼şÃ°Åİ£¬×èÖ¹Ä¬ÈÏÊÂ¼ş
-1.event.stopPropagation()·½·¨
-ÕâÊÇ×èÖ¹ÊÂ¼şµÄÃ°Åİ·½·¨£¬²»ÈÃÊÂ¼şÏòdocumenÉÏÂûÑÓ£¬µ«ÊÇÄ¬ÈÏÊÂ¼şÈÎÈ»»á
-Ö´ĞĞ£¬µ±ÄãµôÓÃÕâ¸ö·½·¨µÄÊ±ºò£¬Èç¹ûµã»÷Ò»¸öÁ¬½Ó£¬Õâ¸öÁ¬½ÓÈÔÈ»»á±»´ò¿ª£¬
+é˜»æ­¢äº‹ä»¶å†’æ³¡ï¼Œé˜»æ­¢é»˜è®¤äº‹ä»¶
+1.event.stopPropagation()æ–¹æ³•
+è¿™æ˜¯é˜»æ­¢äº‹ä»¶çš„å†’æ³¡æ–¹æ³•ï¼Œä¸è®©äº‹ä»¶å‘documenä¸Šè”“å»¶ï¼Œä½†æ˜¯é»˜è®¤äº‹ä»¶ä»»ç„¶ä¼š
+æ‰§è¡Œï¼Œå½“ä½ æ‰ç”¨è¿™ä¸ªæ–¹æ³•çš„æ—¶å€™ï¼Œå¦‚æœç‚¹å‡»ä¸€ä¸ªè¿æ¥ï¼Œè¿™ä¸ªè¿æ¥ä»ç„¶ä¼šè¢«æ‰“å¼€ï¼Œ
 
 
-2.event.preventDefault()·½·¨
-ÕâÊÇ×èÖ¹Ä¬ÈÏÊÂ¼şµÄ·½·¨£¬µ÷ÓÃ´Ë·½·¨ÊÇ£¬Á¬½Ó²»»á±»´ò¿ª£¬µ«ÊÇ»á·¢ÉúÃ°Åİ£¬Ã°Åİ»á´«µİµ½ÉÏÒ»²ãµÄ¸¸ÔªËØ£»
+2.event.preventDefault()æ–¹æ³•
+è¿™æ˜¯é˜»æ­¢é»˜è®¤äº‹ä»¶çš„æ–¹æ³•ï¼Œè°ƒç”¨æ­¤æ–¹æ³•æ˜¯ï¼Œè¿æ¥ä¸ä¼šè¢«æ‰“å¼€ï¼Œä½†æ˜¯ä¼šå‘ç”Ÿå†’æ³¡ï¼Œå†’æ³¡ä¼šä¼ é€’åˆ°ä¸Šä¸€å±‚çš„çˆ¶å…ƒç´ ï¼›
 
 3.return false 
-Õâ¸ö·½·¨±È½Ï±©Á¦£¬Ëû»áÍ¬ÊÂ×èÖ¹ÊÂ¼şÃ°ÅİÒ²»á×èÖ¹Ä¬ÈÏÊÂ¼ş£»Ğ´ÉÏ´Ë´úÂë£¬Á¬
-½Ó²»»á±»´ò¿ª£¬ÊÂ¼şÒ²²»»á´«µİµ½ÉÏÒ»²ãµÄ¸¸ÔªËØ£»¿ÉÒÔÀí½âÎªreturn false
-¾ÍµÈÓÚÍ¬Ê±µ÷ÓÃÁËevent.stopPropagation()ºÍevent.preventDefault()
+è¿™ä¸ªæ–¹æ³•æ¯”è¾ƒæš´åŠ›ï¼Œä»–ä¼šåŒäº‹é˜»æ­¢äº‹ä»¶å†’æ³¡ä¹Ÿä¼šé˜»æ­¢é»˜è®¤äº‹ä»¶ï¼›å†™ä¸Šæ­¤ä»£ç ï¼Œè¿
+æ¥ä¸ä¼šè¢«æ‰“å¼€ï¼Œäº‹ä»¶ä¹Ÿä¸ä¼šä¼ é€’åˆ°ä¸Šä¸€å±‚çš„çˆ¶å…ƒç´ ï¼›å¯ä»¥ç†è§£ä¸ºreturn false
+å°±ç­‰äºåŒæ—¶è°ƒç”¨äº†event.stopPropagation()å’Œevent.preventDefault()
 
-JavascirptÖĞÌí¼Ó¶à¸öÑùÊ½¿ÉÒÔÕâÑù
-document.getElementById(¡°id¡±).style.cssText= ¡°color:red;font-szie:12px;¡±
+Javascirptä¸­æ·»åŠ å¤šä¸ªæ ·å¼å¯ä»¥è¿™æ ·
+document.getElementById(â€œidâ€).style.cssText= â€œcolor:red;font-szie:12px;â€
 
-Ìí¼ÓºÍÉ¾³ıclassµÄ·½·¨
-document.getElementByClassName(¡°class¡±).classlist.add(¡°class¡±);
-document.getElementById(¡°id¡±).classlist.remove(¡°class¡±);
+æ·»åŠ å’Œåˆ é™¤classçš„æ–¹æ³•
+document.getElementByClassName(â€œclassâ€).classlist.add(â€œclassâ€);
+document.getElementById(â€œidâ€).classlist.remove(â€œclassâ€);
 
-jsÅĞ¶ÏÊÇ·ñÊÖ»ú¶ËµÇÂ¼
+jsåˆ¤æ–­æ˜¯å¦æ‰‹æœºç«¯ç™»å½•
 function check() {   
 	var userAgentInfo=navigator.userAgent;   
 	var Agents =new Array("Android","iPhone","SymbianOS","WindowsPhone","iPad","iPod"); 
@@ -87,104 +87,141 @@ function check() {
 	}	
 	 return flag;  
 }
-Check()ÎªtrueÔòpc¶Ë    falseÔòÎªÊÖ»ú¶Ë
+Check()ä¸ºtrueåˆ™pcç«¯    falseåˆ™ä¸ºæ‰‹æœºç«¯
 
 
-CSS¸Ä±ä¹ö¶¯ÌõµÄÑùÊ½
+CSSæ”¹å˜æ»šåŠ¨æ¡çš„æ ·å¼
 ::-webkit-scrollbar {  
-    width: 16px;  /*¹ö¶¯Ìõ¿í¶È*/
-    height: 16px;  /*¹ö¶¯Ìõ¸ß¶È*/
+    width: 16px;  /*æ»šåŠ¨æ¡å®½åº¦*/
+    height: 16px;  /*æ»šåŠ¨æ¡é«˜åº¦*/
 }  
 
 ::-webkit-scrollbar-track {  
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;  /*¹ö¶¯ÌõµÄ±³¾°ÇøÓòµÄÔ²½Ç*/
-    background-color: red;/*¹ö¶¯ÌõµÄ±³¾°ÑÕÉ«*/ 
+    border-radius: 10px;  /*æ»šåŠ¨æ¡çš„èƒŒæ™¯åŒºåŸŸçš„åœ†è§’*/
+    background-color: red;/*æ»šåŠ¨æ¡çš„èƒŒæ™¯é¢œè‰²*/ 
 }
 
 ::-webkit-scrollbar-thumb {
-   border-radius: 10px;  /*¹ö¶¯ÌõµÄÔ²½Ç*/
+   border-radius: 10px;  /*æ»šåŠ¨æ¡çš„åœ†è§’*/
    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); 
-   background-color: green;  /*¹ö¶¯ÌõµÄ±³¾°ÑÕÉ«*/
+   background-color: green;  /*æ»šåŠ¨æ¡çš„èƒŒæ™¯é¢œè‰²*/
 } 
 
-VueÉúÃüÖÜÆÚÒÔ¼°¹³×Óº¯Êı
-beforeCreate  ´´½¨Ç°
-created   ´´½¨Íê³É
-beforeMount  ¹ÒÔØÇ°
-mounted   ¹ÒÔØ½áÊø
-beforeUpdate   ¸üĞÂÇ°×´Ì¬
-updated    ¸üĞÂÍê³É×´Ì¬
-beforeDestroy  Ïú»ÙÇ°×´Ì¬
-destroyed  Ïú»Ù×´Ì¬
+Vueç”Ÿå‘½å‘¨æœŸä»¥åŠé’©å­å‡½æ•°
+beforeCreate  åˆ›å»ºå‰
+created   åˆ›å»ºå®Œæˆ
+beforeMount  æŒ‚è½½å‰
+mounted   æŒ‚è½½ç»“æŸ
+beforeUpdate   æ›´æ–°å‰çŠ¶æ€
+updated    æ›´æ–°å®ŒæˆçŠ¶æ€
+beforeDestroy  é”€æ¯å‰çŠ¶æ€
+destroyed  é”€æ¯çŠ¶æ€
 
-githubµÚÒ»´ÎÌá½»´úÂëÖÁÔ¶³Ì²Ö¿â²½Öè
-git clone  ¿ËÂ¡ÏîÄ¿
-git add .   Ìí¼ÓĞŞ¸ÄºóµÄËùÓĞÄÚÈİ
-git commit ¨Cm ¡°test1¡± Ìá½»µ½·şÎñ
-git push -u origin master  ÍÆËÍµ½²Ö¿â
-git pull master ¸üĞÂ±¾µØ´úÂë
-git branch newBranch ´´½¨ĞÂµÄ·ÖÖ§
-git checkout newBranch ÇĞ»»ĞÂ·ÖÖ§
+githubç¬¬ä¸€æ¬¡æäº¤ä»£ç è‡³è¿œç¨‹ä»“åº“æ­¥éª¤
+git clone  å…‹éš†é¡¹ç›®
+git add .   æ·»åŠ ä¿®æ”¹åçš„æ‰€æœ‰å†…å®¹
+git commit â€“m â€œtest1â€ æäº¤åˆ°æœåŠ¡
+git push -u origin master  æ¨é€åˆ°ä»“åº“
+git pull master æ›´æ–°æœ¬åœ°ä»£ç 
+git branch newBranch åˆ›å»ºæ–°çš„åˆ†æ”¯
+git checkout newBranch åˆ‡æ¢æ–°åˆ†æ”¯
 
-gulpÖ¸Áî²Ù×÷
+gulpæŒ‡ä»¤æ“ä½œ
 
-´´½¨gulpfile.jsÎÄ¼ş
+åˆ›å»ºgulpfile.jsæ–‡ä»¶
 var gulp = require("gulp");
-var uglify = require("gulp-uglify");  //³ó»¯´úÂë
-var concat = require("gulp-concat"); //ºÏ²¢jsÎÄ¼ş
+var uglify = require("gulp-uglify");  //ä¸‘åŒ–ä»£ç 
+var concat = require("gulp-concat"); //åˆå¹¶jsæ–‡ä»¶
 gulp.task("concat",function(){
-gulp.src(["script/*.js","!script/jquery.js"])//³ıÈ¥jqueryÖ®ÍâµÄjsÎÄ¼ş
+gulp.src(["script/*.js","!script/jquery.js"])//é™¤å»jqueryä¹‹å¤–çš„jsæ–‡ä»¶
  .pipe(uglify())
- .pipe(concat("new.min.js")) //ºÏ²¢³ÉÎªnew.min.jsÎÄ¼ş
- .pipe(gulp.dest("dist"));  //·ÅÖÃÔÚdistÎÄ¼ş¼ĞÖĞ
+ .pipe(concat("new.min.js")) //åˆå¹¶æˆä¸ºnew.min.jsæ–‡ä»¶
+ .pipe(gulp.dest("dist"));  //æ”¾ç½®åœ¨distæ–‡ä»¶å¤¹ä¸­
 });
 npm install gulp
-ÔËĞĞ $ gulp concat
+è¿è¡Œ $ gulp concat
 
-ÊÖ»ú¶ËUI¿ò¼Ü
-Sui £¨ÌÔ±¦£©   Weiui£¨Î¢ĞÅ£© frozenUI (qq) Mui£¨×î½Ó½üÔ­Éúapp£©
+æ‰‹æœºç«¯UIæ¡†æ¶
+Sui ï¼ˆæ·˜å®ï¼‰   Weiuiï¼ˆå¾®ä¿¡ï¼‰ frozenUI (qq) Muiï¼ˆæœ€æ¥è¿‘åŸç”Ÿappï¼‰
 
 
-Ç°¶ËµÄÏ¸½ÚÖªÊ¶µã
-JS/CSS/IMG¼ÓÔØË³Ğò¹ØÏµÖ®DOMContentLoadedÊÂ¼ş
-1¡¢CSSÑùÊ½±íÓ°ÏìÁËÍ¼Æ¬µÄ¼ÓÔØËÙ¶È£¬È»¶øJS²»»áÓ°Ïì£¬Èç¹ûÏëÈÃÍ¼Æ¬¾¡¿ì¼ÓÔØ£¬¾Í²»Òª¸øÍ¼Æ¬Ê¹ÓÃÑùÊ½£¬±ÈÈç¿í¸ß²ÉÓÃ±êÇ©ÊôĞÔ¼´¿É¡£
-2¡¢JSµÄ¼ÓÔØÖ´ĞĞËÙ¶ÈÓ°ÏìÁËDOMContentLoadedÊÂ¼şµÄ´¥·¢Ê±¼ä£¬Èç¹ûÏëÒª¾¡¿ì´¥·¢DOMContentLoadedÊÂ¼ş£¬¾Í½«´ÎÒªµÄJS²ÉÓÃ¶¯Ì¬¼ÓÔØµÄ·½Ê½¼ÓÔØ°É¡£
+å‰ç«¯çš„ç»†èŠ‚çŸ¥è¯†ç‚¹
+JS/CSS/IMGåŠ è½½é¡ºåºå…³ç³»ä¹‹DOMContentLoadedäº‹ä»¶
+1ã€CSSæ ·å¼è¡¨å½±å“äº†å›¾ç‰‡çš„åŠ è½½é€Ÿåº¦ï¼Œç„¶è€ŒJSä¸ä¼šå½±å“ï¼Œå¦‚æœæƒ³è®©å›¾ç‰‡å°½å¿«åŠ è½½ï¼Œå°±ä¸è¦ç»™å›¾ç‰‡ä½¿ç”¨æ ·å¼ï¼Œæ¯”å¦‚å®½é«˜é‡‡ç”¨æ ‡ç­¾å±æ€§å³å¯ã€‚
+2ã€JSçš„åŠ è½½æ‰§è¡Œé€Ÿåº¦å½±å“äº†DOMContentLoadedäº‹ä»¶çš„è§¦å‘æ—¶é—´ï¼Œå¦‚æœæƒ³è¦å°½å¿«è§¦å‘DOMContentLoadedäº‹ä»¶ï¼Œå°±å°†æ¬¡è¦çš„JSé‡‡ç”¨åŠ¨æ€åŠ è½½çš„æ–¹å¼åŠ è½½å§ã€‚
 
-Js±Õ°ü
-ÓÉÓÚÔÚJavascriptÓïÑÔÖĞ£¬Ö»ÓĞº¯ÊıÄÚ²¿µÄ×Óº¯Êı²ÅÄÜ¶ÁÈ¡¾Ö²¿±äÁ¿£¬Òò´Ë¿ÉÒÔ°Ñ±Õ°ü¼òµ¥Àí½â³É¡°¶¨ÒåÔÚÒ»¸öº¯ÊıÄÚ²¿µÄº¯Êı¡±¡£
-ÓÃÍ¾: Ò»¸öÊÇÇ°ÃæÌáµ½µÄ¿ÉÒÔ¶ÁÈ¡º¯ÊıÄÚ²¿µÄ±äÁ¿£¬ÁíÒ»¸ö¾ÍÊÇÈÃÕâĞ©±äÁ¿µÄÖµÊ¼ÖÕ±£³ÖÔÚÄÚ´æÖĞ¡£
+Jsé—­åŒ…
+ç”±äºåœ¨Javascriptè¯­è¨€ä¸­ï¼Œåªæœ‰å‡½æ•°å†…éƒ¨çš„å­å‡½æ•°æ‰èƒ½è¯»å–å±€éƒ¨å˜é‡ï¼Œå› æ­¤å¯ä»¥æŠŠé—­åŒ…ç®€å•ç†è§£æˆâ€œå®šä¹‰åœ¨ä¸€ä¸ªå‡½æ•°å†…éƒ¨çš„å‡½æ•°â€ã€‚
+ç”¨é€”: ä¸€ä¸ªæ˜¯å‰é¢æåˆ°çš„å¯ä»¥è¯»å–å‡½æ•°å†…éƒ¨çš„å˜é‡ï¼Œå¦ä¸€ä¸ªå°±æ˜¯è®©è¿™äº›å˜é‡çš„å€¼å§‹ç»ˆä¿æŒåœ¨å†…å­˜ä¸­ã€‚
 function outerFun(){
  	var a=0;
 	function innerFun(){
   		a++;
 		alert(a);
         }
-   return innerFun;  //×¢ÒâÕâÀï
+   return innerFun;  //æ³¨æ„è¿™é‡Œ
 }
 var obj=outerFun();
-obj();  //½á¹ûÎª1
-obj();  //½á¹ûÎª2
+obj();  //ç»“æœä¸º1
+obj();  //ç»“æœä¸º2
 var obj2=outerFun();
-obj2();  //½á¹ûÎª1
-obj2();  //½á¹ûÎª2
+obj2();  //ç»“æœä¸º1
+obj2();  //ç»“æœä¸º2
 
 
-Êı×éÈ¥ÖØ
+æ•°ç»„å»é‡
 var arr = ['abc','abcd','sss','2','d','t','2','ss','f','22','d'];
 var s = [];
 arr.forEach(function(e,i){
-    if(s.indexOf(arr[i]) == -1){  //ÅĞ¶ÏÔÚsÊı×éÖĞÊÇ·ñ´æÔÚ£¬²»´æÔÚÔòpushµ½sÊı×éÖĞ
+    if(s.indexOf(arr[i]) == -1){  //åˆ¤æ–­åœ¨sæ•°ç»„ä¸­æ˜¯å¦å­˜åœ¨ï¼Œä¸å­˜åœ¨åˆ™pushåˆ°sæ•°ç»„ä¸­
   	s.push(e);
     }
 })
 Console.log(s);
 
 
+Canvas å’Œ Svg çš„å¯¹æ¯”
 
+canvasæ˜¯html5æä¾›çš„æ–°å…ƒç´ <canvas> é€šå¸¸é€šè¿‡JSæ¥ç»˜å›¾ï¼Œè€Œsvgå­˜åœ¨çš„å†å²è¦æ¯”canvasä¹…è¿œ æ˜¯XMLç”¨æ¥æè¿°äºŒç»´å›¾å½¢çš„è¯­è¨€
+canvaså¯ä»¥çœ‹åšæ˜¯ä¸€ä¸ªç”»å¸ƒï¼Œå¯ä»¥åœ¨canvasä¸­å¼•å…¥jpgæˆ–pngè¿™ç±»æ ¼å¼çš„å›¾ç‰‡
+è€Œsvgï¼Œæ‰€ç»˜åˆ¶çš„å›¾å½¢ä¸ºçŸ¢é‡å›¾ï¼Œæ‰€ä»¥svgä¸­ä¸èƒ½å¼•å…¥æ™®é€šçš„å›¾ç‰‡ï¼Œå¯ä»¥è¢«æ— é™æ”¾å¤§è€Œä¸ä¼šå¤±çœŸï¼Œå¾ˆé€‚åˆè¢«ç”¨æ¥åšåœ°å›¾
+å†æ¥ä»‹ç»ä¸€ä¸ªsvgçš„jsåº“ï¼šTWO.JSã€‚å…¶ä¸­åŒ…å«two.jså’Œthree.jså‰è€…ç”¨äºç»˜åˆ¶äºŒç»´å›¾å½¢ï¼Œåè€…ç”¨äºç»˜åˆ¶ä¸‰ç»´å›¾å½¢
 
+å‡½æ•°é˜²æŠ– ä¸ å‡½æ•°èŠ‚æµ
 
+å‡½æ•°é˜²æŠ–
+ é¢‘ç¹è§¦å‘,ä½†åªåœ¨ç‰¹å®šçš„æ—¶é—´å†…æ²¡æœ‰è§¦å‘æ‰§è¡Œæ¡ä»¶æ‰æ‰§è¡Œä¸€æ¬¡ä»£ç 
+ å‡½æ•°èŠ‚æµåº”ç”¨çš„å®é™…åœºæ™¯ï¼Œå¤šæ•°åœ¨ç›‘å¬é¡µé¢å…ƒç´ æ»šåŠ¨äº‹ä»¶çš„æ—¶å€™ä¼šç”¨åˆ°
+// å‡½æ•°èŠ‚æµ
+var canRun = true;
+document.getElementById("throttle").onscroll = function(){
+    if(!canRun){
+        // åˆ¤æ–­æ˜¯å¦å·²ç©ºé—²ï¼Œå¦‚æœåœ¨æ‰§è¡Œä¸­ï¼Œåˆ™ç›´æ¥return
+        return;
+    }
+    canRun = false;
+    setTimeout(function(){
+        console.log("å‡½æ•°èŠ‚æµ");
+        canRun = true;
+    }, 300);
+};
+// å‡½æ•°èŠ‚æµçš„è¦ç‚¹æ˜¯ï¼Œå£°æ˜ä¸€ä¸ªå˜é‡å½“æ ‡å¿—ä½ï¼Œè®°å½•å½“å‰ä»£ç æ˜¯å¦åœ¨æ‰§è¡Œã€‚
+// å¦‚æœç©ºé—²ï¼Œåˆ™å¯ä»¥æ­£å¸¸è§¦å‘æ–¹æ³•æ‰§è¡Œã€‚
+// å¦‚æœä»£ç æ­£åœ¨æ‰§è¡Œï¼Œåˆ™å–æ¶ˆè¿™æ¬¡æ–¹æ³•æ‰§è¡Œï¼Œç›´æ¥returnã€‚
 
+å‡½æ•°èŠ‚æµ
+ é¢‘ç¹è§¦å‘,ä½†åªåœ¨ç‰¹å®šçš„æ—¶é—´å†…æ‰æ‰§è¡Œä¸€æ¬¡ä»£ç 
+ å‡½æ•°é˜²æŠ–çš„åº”ç”¨åœºæ™¯ï¼Œæœ€å¸¸è§çš„å°±æ˜¯ç”¨æˆ·æ³¨å†Œæ—¶å€™çš„æ‰‹æœºå·ç éªŒè¯å’Œé‚®ç®±éªŒè¯äº†
+// å‡½æ•°é˜²æŠ–
+var timer = false;
+document.getElementById("debounce").onscroll = function(){
+    clearTimeout(timer); // æ¸…é™¤æœªæ‰§è¡Œçš„ä»£ç ï¼Œé‡ç½®å›åˆå§‹åŒ–çŠ¶æ€
 
-
-
+    timer = setTimeout(function(){
+        console.log("å‡½æ•°é˜²æŠ–");
+    }, 300);
+};
+// å‡½æ•°èŠ‚æµçš„è¦ç‚¹ï¼Œä¹Ÿæ˜¯éœ€è¦ä¸€ä¸ªsetTimeoutæ¥è¾…åŠ©å®ç°ã€‚å»¶è¿Ÿæ‰§è¡Œéœ€è¦è·‘çš„ä»£ç ã€‚
+// å¦‚æœæ–¹æ³•å¤šæ¬¡è§¦å‘ï¼Œåˆ™æŠŠä¸Šæ¬¡è®°å½•çš„å»¶è¿Ÿæ‰§è¡Œä»£ç ç”¨clearTimeoutæ¸…æ‰ï¼Œé‡æ–°å¼€å§‹ã€‚
+// å¦‚æœè®¡æ—¶å®Œæ¯•ï¼Œæ²¡æœ‰æ–¹æ³•è¿›æ¥è®¿é—®è§¦å‘ï¼Œåˆ™æ‰§è¡Œä»£ç ã€‚
